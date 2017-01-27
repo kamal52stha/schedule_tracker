@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+       <title> Login</title>
+       <link rel="stylesheet" href="style/style.css">
+       <style type="text/css">
+           
+       </style>
+    </head>
+    
+    
+   <body>
+       
+       <?php include_once("navigation/welcome.php")?>
+       
+       <div class="container">
+          <div class="row">
+             <div class="loginForm" >
+                 <h5>Login</h5>
+                   <form action="login.php" method="post">
+                        
+                        <div class="form-group">
+                            <label>Email</label><br>
+                            <input type="email" name="email" class="form-control" placeholder="you@domain.com">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="password" class="form-control" placeholder="password">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="text-right">
+                            <button class="btn btn-default" type="submit" value="login" name="submit">Log in</button>
+                        </div>
+                    </form> 
+             </div> 
+          </div>
+       </div>
+   </body>
+</html>
